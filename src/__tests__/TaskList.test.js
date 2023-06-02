@@ -5,5 +5,6 @@ import { TASKS } from "../data";
 
 test("displays all items when initially rendered", () => {
   const { container } = render(<TaskList tasks={TASKS} />);
+  //console.log(container);
   expect(container.querySelectorAll(".task")).toHaveLength(TASKS.length);
 });
